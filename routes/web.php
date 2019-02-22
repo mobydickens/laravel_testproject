@@ -15,9 +15,10 @@ Route::get('/', 'PagesController@home');
 Route::get('/about', 'PagesController@about');
 Route::get('/contact', 'PagesController@contact');
 
-
+//to make controller resource with the boilerplate prefilled, in bash you would write: `php artisan make:controller <name> -r`.
 Route::resource('projects', 'ProjectsController');
 
+// ABOVE ROUTE IS SHORTCUT FOR EVERYTHING BELOW:
 // Route::get('/projects', 'ProjectsController@index');
 // // GET /projects -> fetch all of the resource (common convention, call it 'index')
 

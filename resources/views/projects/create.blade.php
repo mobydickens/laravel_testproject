@@ -9,7 +9,7 @@
   <form method='POST' action='/projects'>
 
     {{ csrf_field() }}
-    
+
     <div>
       <input type="text" name='title' placeholder='project title'>
     </div>
